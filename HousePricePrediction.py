@@ -73,4 +73,3 @@ with tf.Session() as sess:
     training_cost = sess.run(tf_cost, feed_dict={tf_house_size:train_house_size_norm, tf_price: train_price_norm})
     print("Trained cost=", training_cost, "size_factor=", sess.run(tf_size_factor), "price_offset=", sess.run(tf_price_offset), '\n' )
 
-    
